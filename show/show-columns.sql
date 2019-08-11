@@ -8,6 +8,10 @@ USE database_name;
 
 SELECT database();
 
+-- Show all available tables;
+
+SHOW TABLES;
+
 -- Show the columns of a database;
 
 

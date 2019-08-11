@@ -1,4 +1,5 @@
 -- Use the following sql command to create a new table. 
+-- Table names are generally pluralize, with and 's'
 
 CREATE TABLE table_name
     (
@@ -6,7 +7,7 @@ CREATE TABLE table_name
         column_name data_type
     );
     
--- Actual 
+-- Actual
 
 CREATE TABLE cats
     (
