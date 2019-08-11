@@ -1,12 +1,19 @@
 -- The following example will return customers name from the customer table, along with the count of records in the orders table
+
 -- https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_or
+
 
 SELECT 	customerName,
         COUNT(*) AS 'numbers of order'
+        
 FROM 	customers
+
 INNER JOIN orders
 	    ON orders.customerID = customers.customerID
+	    
 GROUP BY customers.customerID;
+
+
 
 -- Number of Records: 74
 
