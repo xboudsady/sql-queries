@@ -16,10 +16,21 @@ CREATE TABLE cats
         age INT
     );
     
+    
 -- EXAMPLE 2
 
 CREATE TABLE pasteries 
     (
         name VARCHAR(50),
         quantity INT
-    )
+    );
+    
+    
+-- EXAMPLE 3
+
+CREATE TABLE people
+    (
+        first_name VARCHAR(20),
+        last_name VARCHAR(20),
+        age INT
+    );
