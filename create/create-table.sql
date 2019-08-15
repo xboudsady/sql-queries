@@ -7,10 +7,19 @@ CREATE TABLE table_name
         column_name data_type
     );
     
--- Actual
+    
+-- EXAMPLE 1
 
 CREATE TABLE cats
     (
         name VARCHAR(100),
         age INT
     );
+    
+-- EXAMPLE 2
+
+CREATE TABLE pasteries 
+    (
+        name VARCHAR(50),
+        quantity INT
+    )

@@ -26,6 +26,10 @@ Start MySQL, and then confirm it has started, by running the following command.
 
 `sudo service mysqld start && sudo service mysqld status`
 
+If prompted with [ERROR] Fatal error: Please read "Security" section of the manual to find out how to run mysqld as root!
+
+Start the server as the root. `sudo service mysqld start -u root -p`
+
 To Stop the server
 
 `sudo service mysqld stop`
