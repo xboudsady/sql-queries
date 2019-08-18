@@ -35,3 +35,14 @@ VALUES  ('Linda', 'Belcher', 45),
 
 INSERT INTO employees(first_name, last_name, age)
 VALUES  ('Dora', 'Smith', 58);
+
+
+INSERT INTO cats(name, breed, age)
+VALUES  ('Ringo', 'Tabby', 4),
+        ('Cindy', 'Main Coon', 10),
+        ('Dumbledore', 'Main Coon', 11),
+        ('Egg', 'Persian', 4),
+        ('Misty', 'Tabby', 13),
+        ('George Michael', 'Ragdoll', 9),
+        ('Jackson', 'Sphynx', 7);
+        
