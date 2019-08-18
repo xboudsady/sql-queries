@@ -15,22 +15,48 @@ CREATE TABLE cats
         name VARCHAR(100),
         age INT
     );
-    
-    
--- EXAMPLE 2
 
-CREATE TABLE pasteries 
+
+    
+-- EXAMPLE 2 with NOT NULL
+
+CREATE TABLE cats2
     (
-        name VARCHAR(50),
-        quantity INT
+        name VARCHAR(100) NOT NULL,
+        age INT NOT NULL
+    );
+
+    
+    
+-- EXAMPLE 3 - with Set DEFAULT Values
+
+CREATE TABLE cats3
+    (
+        name VARCHAR(100) DEFAULT 'unamed',
+        age INT DEFAULT 99
     );
     
-    
--- EXAMPLE 3
 
-CREATE TABLE people
+
+-- EXAMPLE 4 - with PRIMARY KEY
+
+CREATE TABLE unique_cats
     (
-        first_name VARCHAR(20),
-        last_name VARCHAR(20),
-        age INT
+        cat_id INT NOT NULL,
+        name VARCHAR(100),
+        age INT,
+        PRIMARY KEY (cat_id)
+    );
+    
+
+-- EXAMPLE 5 Employee table, with mandatory field, primary key - auto increment
+
+CREATE TABLE employees
+    (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        last_name VARCHAR(255) NOT NULL,
+        first_name VARCHAR(255) NOT NULL,
+        middle_name VARCHAR(255),
+        age INT NOT NULL,
+        current_status VARCHAR(100) NOT NULL DEFAULT 'employed'
     );

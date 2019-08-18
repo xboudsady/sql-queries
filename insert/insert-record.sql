@@ -19,13 +19,19 @@ VALUES  ('Charlie', 10),
 -- To view records in table, use the SELECT * FROM table_name;
 
 
--- EXAMPLE 1
+-- EXAMPLE 1 - Multi Insert
 
 INSERT INTO people (first_name, last_name, age)
 VALUES  ('Tina', 'Belcher', 13),
         ('Bob', 'Belcher', 42);
+        
 
 INSERT INTO people (first_name, last_name, age)
 VALUES  ('Linda', 'Belcher', 45),
         ('Phillip', 'Belcher', 38),
         ('Calvin', 'Fischoeder', 70);
+        
+        
+
+INSERT INTO employees(first_name, last_name, age)
+VALUES  ('Dora', 'Smith', 58);
