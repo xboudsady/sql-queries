@@ -22,6 +22,7 @@ SELECT * FROM table_name;
 -- 7 rows in set (0.00 sec)
 
 
+
 --- Selecting only column, or fields from a table
 
 SELECT name FROM cats;
@@ -40,11 +41,25 @@ SELECT name FROM cats;
 -- +----------------+
 -- 7 rows in set (0.00 sec)
 
+SELECT cat_id FROM cats;
+
+-- +--------+
+-- | cat_id |
+-- +--------+
+-- |      1 |
+-- |      2 |
+-- |      3 |
+-- |      4 |
+-- |      5 |
+-- |      6 |
+-- |      7 |
+-- +--------+
+-- 7 rows in set (0.00 sec)
+
 
 
 -- Selectiong two columns
-SELECT  name, age
-FROM    cats;
+SELECT  name, age FROM cats;
 
 -- +----------------+------+
 -- | name           | age  |
@@ -58,6 +73,23 @@ FROM    cats;
 -- | Jackson        |    7 |
 -- +----------------+------+
 -- 7 rows in set (0.00 sec)
+
+
+SELECT name, breed FROM cats;
+
+-- +----------------+-----------+
+-- | name           | breed     |
+-- +----------------+-----------+
+-- | Ringo          | Tabby     |
+-- | Cindy          | Main Coon |
+-- | Dumbledore     | Main Coon |
+-- | Egg            | Persian   |
+-- | Misty          | Tabby     |
+-- | George Michael | Ragdoll   |
+-- | Jackson        | Sphynx    |
+-- +----------------+-----------+
+-- 7 rows in set (0.00 sec)
+
 
 
 
