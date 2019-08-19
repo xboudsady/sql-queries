@@ -63,3 +63,28 @@ CREATE TABLE employees
         age INT NOT NULL,
         current_status VARCHAR(100) NOT NULL DEFAULT 'employed'
     );
+    
+    
+
+-- EXAMPLE 5
+
+CREATE TABLE shirts
+    (
+        shirt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        article VARCHAR(100),
+        color VARCHAR(100),
+        shirt_size VARCHAR(100),
+        last_worn INT
+    );
+    
+-- OUTPUT
+-- +------------+--------------+------+-----+---------+----------------+
+-- | Field      | Type         | Null | Key | Default | Extra          |
+-- +------------+--------------+------+-----+---------+----------------+
+-- | shirt_id   | int(11)      | NO   | PRI | NULL    | auto_increment |
+-- | article    | varchar(100) | YES  |     | NULL    |                |
+-- | color      | varchar(100) | YES  |     | NULL    |                |
+-- | shirt_size | varchar(100) | YES  |     | NULL    |                |
+-- | last_worn  | int(11)      | YES  |     | NULL    |                |
+-- +------------+--------------+------+-----+---------+----------------+
+-- 5 rows in set (0.00 sec)
