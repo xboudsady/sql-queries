@@ -165,3 +165,41 @@ UPDATE shirts SET shirt_size = 'L' WHERE article = 'polo shirt';
 -- |        9 | polo shirt | purple | L          |        50 |
 -- +----------+------------+--------+------------+-----------+
 -- 3 rows in set (0.00 sec)
+
+
+
+-- UPDATE all shirts from last worn from 0 to 15
+
+UPDATE shirts SET last_worn = 0 WHERE last_worn = 15;
+
+-- +----------+----------+-------+------------+-----------+
+-- | shirt_id | article  | color | shirt_size | last_worn |
+-- +----------+----------+-------+------------+-----------+
+-- |        5 | t-shirt  | pink  | S          |         0 |
+-- |        8 | tank top | blue  | M          |         0 |
+-- +----------+----------+-------+------------+-----------+
+-- 2 rows in set (0.00 sec)
+ 
+
+
+-- Update all white shirts, change sixe to 'xs' and color to 'off white'
+
+UPDATE shirts SET shirt_size = 'XS', color = 'off white' WHERE color = 'white';
+
+-- +----------+----------+-------+------------+-----------+
+-- | shirt_id | article  | color | shirt_size | last_worn |
+-- +----------+----------+-------+------------+-----------+
+-- |        1 | t-shirt  | white | S          |        10 |
+-- |        7 | tank top | white | S          |       200 |
+-- +----------+----------+-------+------------+-----------+
+-- 2 rows in set (0.00 sec)
+
+-- TO
+
+-- +----------+----------+-----------+------------+-----------+
+-- | shirt_id | article  | color     | shirt_size | last_worn |
+-- +----------+----------+-----------+------------+-----------+
+-- |        1 | t-shirt  | off white | XS         |        10 |
+-- |        7 | tank top | off white | XS         |       200 |
+-- +----------+----------+-----------+------------+-----------+
+-- 2 rows in set (0.00 sec)
