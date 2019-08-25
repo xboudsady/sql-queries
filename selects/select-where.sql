@@ -131,3 +131,4 @@ SELECT article, color, shirt_size, last_worn FROM shirts WHERE shirt_size = 'M';
 -- | polo shirt | purple | M          |        50 |
 -- +------------+--------+------------+-----------+
 -- 4 rows in set (0.00 sec)
+
